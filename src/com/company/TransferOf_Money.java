@@ -14,6 +14,7 @@ public class TransferOf_Money {
     double Grn = 10000 + (int) (Math.random() * 500000);// 3
     double Ruble = 10000 + (int) (Math.random() * 100000);// 4
     int counter = 0;
+    ArrayForSort<Zvit> zvitnist;
 
     public void perevod(double clientMoney, int fromWhat, int inWhat) {
 
@@ -138,6 +139,6 @@ public class TransferOf_Money {
                 addRub += clientMoney;
                 addGrn -= TransActions[counter];
             }
-        }
+        }//zvitnist.output();
     }
 }
